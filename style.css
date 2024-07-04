@@ -1,0 +1,189 @@
+body {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+#game {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Format the Game Title */
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.green {
+  color: #00674b;
+}
+
+.green-lit {
+  color: #00dfa2;
+  text-shadow: 0px 0px 20px #00dfa2;
+}
+
+.red {
+  color: #980039;
+}
+
+.red-lit {
+  color: #ff0060;
+  text-shadow: 0px 0px 20px #ff0060;
+}
+
+.yellow {
+  color: #878c05;
+}
+
+.yellow-lit {
+  color: #f6fa70;
+  text-shadow: 0px 0px 20px #f6fa70;
+}
+
+.blue {
+  color: #00499a;
+}
+
+.blue-lit {
+  color: #0079ff;
+  text-shadow: 0px 0px 20px #0079ff;
+}
+
+/* Format the Game Console */
+
+#console {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: #373a40;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.piece {
+  height: 80%;
+  width: 80%;
+}
+
+.tl {
+  margin-top: 10%;
+  margin-left: 10%;
+  background-color: #00674b;
+  border-top-left-radius: 100%;
+}
+
+.tl-lit {
+  background-color: #00dfa2;
+  box-shadow: 0px 0px 100px #00dfa2;
+}
+
+.tr {
+  margin-top: 10%;
+  margin-right: 10%;
+  background-color: #980039;
+  border-top-right-radius: 100%;
+}
+
+.tr-lit {
+  background-color: #ff0060;
+  box-shadow: 0px 0px 100px #ff0060;
+}
+
+.bl {
+  margin-bottom: 10%;
+  margin-left: 10%;
+  background-color: #878c05;
+  border-bottom-left-radius: 100%;
+}
+
+.bl-lit {
+  background-color: #f6fa70;
+  box-shadow: 0px 0px 100px #f6fa70;
+}
+
+.br {
+  margin-bottom: 10%;
+  margin-right: 10%;
+  background-color: #00499a;
+  border-bottom-right-radius: 100%;
+}
+
+.br-lit {
+  background-color: #0079ff;
+  box-shadow: 0px 0px 100px #0079ff;
+}
+
+/* Format the Best Score */
+#best {
+  display: none;
+  color: #ffdb00;
+  font-family: "Press Start 2P", system-ui;
+  text-shadow: 0px 0px 20px #ffdb00;
+  margin-top: 50px;
+}
+/* Format the Score */
+#score {
+  display: none;
+  color: #e49bff;
+  font-family: "Press Start 2P", system-ui;
+  text-shadow: 0px 0px 20px #e49bff;
+  margin-top: 50px;
+}
+
+/* Format the Button */
+button {
+  margin-top: 25x;
+  height: 80px;
+  width: 300px;
+  background-color: #ffdb00;
+  display: none;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 2rem;
+  color: #ff8f00;
+  border: #ff8f00 solid 10px;
+  box-shadow: 0px 0px 100px #ff8f00;
+}
+
+.pressed {
+  background-color: #e49bff;
+  color: #af47d2;
+  border: #af47d2 solid 10px;
+  box-shadow: 0px 0px 100px #af47d2;
+}
+
+/* custom styling for different viewports */
+@media (max-width: 576px) {
+  #console {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-height: 600px) {
+  #console {
+    height: 250px;
+    width: 250px;
+  }
+  #best {
+    margin-top: 25px;
+  }
+  #score {
+    margin-top: 25px;
+  }
+}
+
+.noty_layout_bottomCenter .noty_body {
+  text-align: center !important; /* Center align text */
+}
