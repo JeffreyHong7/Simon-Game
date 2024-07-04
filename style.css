@@ -182,8 +182,19 @@ button {
   #score {
     margin-top: 25px;
   }
-}
-
-.noty_layout_bottomCenter .noty_body {
-  text-align: center !important; /* Center align text */
+  .green-lit {
+    text-shadow: 0px 0px 10px #00dfa2;
+  }
+  .red-lit {
+    text-shadow: 0px 0px 10px #ff0060;
+  }
+  .yellow-lit {
+    text-shadow: 0px 0px 10px #f6fa70;
+  }
+  .blue-lit {
+    text-shadow: 0px 0px 10px #0079ff;
+  }
+  button {
+    font-size: 1rem;
+  }
 }
