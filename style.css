@@ -169,9 +169,30 @@ button {
     height: 250px;
     width: 250px;
   }
+  #best {
+    margin-top: 25px;
+  }
+  #score {
+    margin-top: 25px;
+  }
+  .green-lit {
+    text-shadow: 0px 0px 10px #00dfa2;
+  }
+  .red-lit {
+    text-shadow: 0px 0px 10px #ff0060;
+  }
+  .yellow-lit {
+    text-shadow: 0px 0px 10px #f6fa70;
+  }
+  .blue-lit {
+    text-shadow: 0px 0px 10px #0079ff;
+  }
+  button {
+    font-size: 1rem;
+  }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 700px), (max-width: 576px) {
   #console {
     height: 250px;
     width: 250px;
